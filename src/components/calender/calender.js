@@ -16,8 +16,8 @@ export function Calender() {
   });
   return (
     <div>
-      <h1>react-calendar-heatmap demos</h1>
-      <p>Random values with onClick and react-tooltip</p>
+      <h1>calendar</h1>
+
       <CalendarHeatmap
         startDate={shiftDate(today, -150)}
         endDate={today}

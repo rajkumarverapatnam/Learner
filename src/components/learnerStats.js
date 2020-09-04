@@ -1,8 +1,9 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import { Calender } from "../components/calender/calender";
 
-export const LearnerStats = () => {
+const LearnerStats = () => {
   const learnerDetails = {
     padding: "50px",
     backgroundColor: "#2fcbd6",
@@ -38,4 +39,12 @@ export const LearnerStats = () => {
       </div> */}
     </div>
   );
+
+  const mapStateToProps = (state) => {
+    return {
+      name: state.learnerDetails.name,
+    };
+  };
 };
+
+export default connect(mapStateToProps)(LearnerStats);
